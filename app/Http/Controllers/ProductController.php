@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use App\Services\ProductService;
-use Illuminate\Http\JsonResponse;
+use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -24,13 +24,26 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return JsonResponse
+     * @return View
      */
-    public function index(): JsonResponse
+    public function index(): View
     {
-        $products = $this->product->all()->toArray();
+        $products = $this->product->all();
 
-        return response()->json($products);
+        $pageConfigs = [
+            'contentLayout' => "content-detached-left-sidebar",
+            'pageClass' => 'ecommerce-application',
+        ];
+
+        $breadcrumbs = [
+            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['name' => "Shop"]
+        ];
+
+        return view('/content/apps/ecommerce/app-ecommerce-shop', [
+            'pageConfigs' => $pageConfigs,
+            'breadcrumbs' => $breadcrumbs,
+            'products' => $products
+        ]);
     }
 
     /**

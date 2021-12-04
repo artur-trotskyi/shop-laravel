@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
                 'After thousands of samples of palm data, we designed this ergonomic mouse. The laptop mouse has a streamlined arc and thumb rest to help reduce the stress caused by prolonged use of the laptop mouse.',
             'brand' => 'VicTsing',
             'price' => 10.99,
-            'image' => '../images/pages/shop/products/27.png',
+            'image' => 'images/pages/shop/products/27.png',
             'hasFreeShipping' => 'true',
             'rating' => 3
         ]);
@@ -36,7 +36,7 @@ class ProductSeeder extends Seeder
                 'Redesigned for luxury — Thoughtfully refined and strikingly elegant, the latest Bose sunglasses blend enhanced features and designs for an elevated way to listen',
             'brand' => 'Bose',
             'price' => 249.0,
-            'image' => '../images/pages/shop/products/26.png',
+            'image' => 'images/pages/products/26.png',
             'hasFreeShipping' => 'false',
             'rating' => 4
         ]);
@@ -49,7 +49,7 @@ class ProductSeeder extends Seeder
                 'Are you looking for a smart watch, which can not only easily keep tracking of your steps, calories, heart rate and sleep quality, but also keep you informed of incoming calls.',
             'brand' => 'Willful',
             'price' => 29.99,
-            'image' => '../images/pages/shop/products/25.png',
+            'image' => 'images/pages/products/25.png',
             'hasFreeShipping' => 'true',
             'rating' => 5
         ]);
@@ -62,7 +62,7 @@ class ProductSeeder extends Seeder
                 'Made of high quality water-resistant material; padded and adjustable shoulder straps; external USB with built-in charging cable offers a convenient charging',
             'brand' => 'Ronyes',
             'price' => 23.99,
-            'image' => '../images/pages/shop/products/24.png',
+            'image' => 'images/pages/products/24.png',
             'hasFreeShipping' => 'true',
             'rating' => 2
         ]);
@@ -74,7 +74,7 @@ class ProductSeeder extends Seeder
             'description' => 'Up to 3TB of storage capacity to store your growing files and content',
             'brand' => 'Toshiba',
             'price' => 69.99,
-            'image' => '../images/pages/shop/products/23.png',
+            'image' => 'images/pages/products/23.png',
             'hasFreeShipping' => 'true',
             'rating' => 2
         ]);
@@ -87,7 +87,7 @@ class ProductSeeder extends Seeder
                 'FIND KEYS, BAGS & MORE -- Pro is our high-performance finder ideal for keys, backpacks, luggage or any other items you want to keep track of. The easy-to-use finder and free app work with iOS and Android.',
             'brand' => 'Tile',
             'price' => 29.99,
-            'image' => '../images/pages/shop/products/22.png',
+            'image' => 'images/pages/products/22.png',
             'hasFreeShipping' => 'false',
             'rating' => 4
         ]);
@@ -100,7 +100,7 @@ class ProductSeeder extends Seeder
                 'Bluetooth Speakers-The M90 Bluetooth speaker uses the latest Bluetooth 5.0 technology and the latest Bluetooth ATS chip, Connecting over Bluetooth in seconds to iPhone, iPad, Smart-phones, Tablets, Windows, and other Bluetooth devices.',
             'brand' => 'Bugani',
             'price' => 56.0,
-            'image' => '../images/pages/shop/products/21.png',
+            'image' => 'images/pages/products/21.png',
             'hasFreeShipping' => 'false',
             'rating' => 3
         ]);
@@ -113,7 +113,7 @@ class ProductSeeder extends Seeder
                 'All the greatest, games, TV, music and more. Connect with your friends to broadcast and celebrate your epic moments at the press of the Share button to Twitch, YouTube, Facebook and Twitter.',
             'brand' => 'Sony',
             'price' => 339.95,
-            'image' => '../images/pages/shop/products/20.png',
+            'image' => 'images/pages/products/20.png',
             'hasFreeShipping' => 'false',
             'rating' => 4
         ]);
@@ -126,7 +126,7 @@ class ProductSeeder extends Seeder
                 'With unique inspirational quote and time markers on it,this water bottle is great for measuring your daily intake of water,reminding you stay hydrated and drink enough water throughout the day.A must have for any fitness goals including weight loss,appetite control and overall health.',
             'brand' => '3M',
             'price' => 16.99,
-            'image' => '../images/pages/shop/products/19.png',
+            'image' => 'images/pages/products/19.png',
             'hasFreeShipping' => 'true',
             'rating' => 4
         ]);
@@ -139,7 +139,7 @@ class ProductSeeder extends Seeder
                 'All-in-one VR=>No PC. No wires. No limits. Oculus quest is an all-in-one gaming system built for virtual reality. Now you can play almost anywhere with just a VR headset and controllers. Oculus touch controllers=>arm yourself with the award-winning Oculus touch controllers. Your slashes, throws and grab appear in VR with intuitive, realistic Precision, transporting your hands and gestures right into the game',
             'brand' => 'Oculus',
             'price' => 645.0,
-            'image' => '../images/pages/shop/products/18.png',
+            'image' => 'images/pages/products/18.png',
             'hasFreeShipping' => 'false',
             'rating' => 1
         ]);
@@ -152,7 +152,7 @@ class ProductSeeder extends Seeder
                 'Classic Hobo Purse=>Top zipper closure, with 2 side zipper pockets design and elegant tassels decoration, fashionable and practical handbags for women, perfect for shopping, dating, travel and business',
             'brand' => 'Hobo',
             'price' => 39.99,
-            'image' => '../images/pages/shop/products/17.png',
+            'image' => 'images/pages/products/17.png',
             'hasFreeShipping' => 'true',
             'rating' => 3
         ]);
@@ -165,7 +165,7 @@ class ProductSeeder extends Seeder
                 'Comfort + performance.  Designed with materials that are durable, lightweight and extremely comfortable. Core performance delivers the perfect mix of fit, style and all-around performance.',
             'brand' => 'Adidas',
             'price' => 54.59,
-            'image' => '../images/pages/shop/products/16.png',
+            'image' => 'images/pages/products/16.png',
             'hasFreeShipping' => 'false',
             'rating' => 5
         ]);
@@ -178,7 +178,7 @@ class ProductSeeder extends Seeder
                 'TSA FRIENDLY- A separate DIGI SMART compartment can hold 15.6 inch Laptop as well as 15 inch, 14 inch Macbook, 12.9 inch iPad, and tech accessories like charger for quick TSA checkpoint when traveling',
             'brand' => 'TAS',
             'price' => 29.99,
-            'image' => '../images/pages/shop/products/15.png',
+            'image' => 'images/pages/products/15.png',
             'hasFreeShipping' => 'true',
             'rating' => 5
         ]);
@@ -191,7 +191,7 @@ class ProductSeeder extends Seeder
                 'Charge with case=>transmits charging power directly through protective cases. Rubber/plastic/TPU cases under 5 mm thickness . Do not use any magnetic and metal attachments or cards, or it will prevent charging.',
             'brand' => '3M',
             'price' => 10.83,
-            'image' => '../images/pages/shop/products/14.png',
+            'image' => 'images/pages/products/14.png',
             'hasFreeShipping' => 'true',
             'rating' => 3
         ]);
@@ -204,7 +204,7 @@ class ProductSeeder extends Seeder
                 'SUPERIOR VIEWING EXPERIENCE=>Supporting 1920x1080 resolution, VANKYO Leisure 3 projector is powered by MStar Advanced Color Engine, which is ideal for home entertainment. 2020 upgraded LED lighting provides a superior viewing experience for you.',
             'brand' => 'Vankyo Store',
             'price' => 99.99,
-            'image' => '../images/pages/shop/products/13.png',
+            'image' => 'images/pages/products/13.png',
             'hasFreeShipping' => 'true',
             'rating' => 2
         ]);
@@ -217,7 +217,7 @@ class ProductSeeder extends Seeder
                 'Up to 10 hours of surﬁng the web on Wi‑Fi, watching video, or listening to music. Up to 9 hours of surﬁng the web using cellular data network, Compatible with Smart Keyboard Folio and Bluetooth keyboards',
             'brand' => 'Apple',
             'price' => 799.99,
-            'image' => '../images/pages/shop/products/12.png',
+            'image' => 'images/pages/products/12.png',
             'hasFreeShipping' => 'false',
             'rating' => 3
         ]);
@@ -230,7 +230,7 @@ class ProductSeeder extends Seeder
                 'With a bold application of colorblocking inspired by modern art styles, the Nike Air Max 270 React sneaker is constructed with layers of lightweight material to achieve its artful look and comfortable feel.',
             'brand' => 'Nike',
             'price' => 81.99,
-            'image' => '../images/pages/shop/products/11.png',
+            'image' => 'images/pages/products/11.png',
             'hasFreeShipping' => 'true',
             'rating' => 5
         ]);
@@ -243,7 +243,7 @@ class ProductSeeder extends Seeder
                 'Logitech K380 Bluetooth Wireless Keyboard gives you the comfort and convenience of desktop typing on your smartphone, and tablet. It is a wireless keyboard that connects to all Bluetooth wireless devices that support external keyboards. Take this compact, lightweight, Bluetooth keyboard anywhere in your home. Type wherever you like, on any compatible computer, phone or tablet.',
             'brand' => 'Logitech',
             'price' => 81.99,
-            'image' => '../images/pages/shop/products/10.png',
+            'image' => 'images/pages/products/10.png',
             'hasFreeShipping' => 'false',
             'rating' => 4
         ]);
@@ -259,7 +259,7 @@ class ProductSeeder extends Seeder
     and has good viewing angles.',
             'brand' => 'Philips',
             'price' => 14.99,
-            'image' => '../images/pages/shop/products/9.png',
+            'image' => 'images/pages/products/9.png',
             'hasFreeShipping' => 'false',
             'rating' => 4
         ]);
@@ -273,7 +273,7 @@ class ProductSeeder extends Seeder
     You can connect various gadgets such as your laptop using the HDMI port. The TV comes with a 1 Year warranty.',
             'brand' => 'Apple',
             'price' => 7999.99,
-            'image' => '../images/pages/shop/products/8.png',
+            'image' => 'images/pages/products/8.png',
             'hasFreeShipping' => 'false',
             'rating' => 5
         ]);
@@ -287,7 +287,7 @@ class ProductSeeder extends Seeder
     Android and iOS operating systems, and can control compatible smart devices such as Chromecast or Nest.',
             'brand' => 'Google',
             'price' => 129.29,
-            'image' => '../images/pages/shop/products/7.png',
+            'image' => 'images/pages/products/7.png',
             'hasFreeShipping' => 'true',
             'rating' => 4
         ]);
@@ -302,7 +302,7 @@ class ProductSeeder extends Seeder
     adapter to use it with your PC.',
             'brand' => 'Sharp',
             'price' => 429.99,
-            'image' => '../images/pages/shop/products/6.png',
+            'image' => 'images/pages/products/6.png',
             'hasFreeShipping' => 'false',
             'rating' => 3
         ]);
@@ -317,7 +317,7 @@ class ProductSeeder extends Seeder
     better.',
             'brand' => 'Apple',
             'price' => 999.99,
-            'image' => '../images/pages/shop/products/5.png',
+            'image' => 'images/pages/products/5.png',
             'hasFreeShipping' => 'false',
             'rating' => 4
         ]);
@@ -332,7 +332,7 @@ class ProductSeeder extends Seeder
     turns any home into a smart device on a smartphone or tablet.',
             'brand' => 'OneOdio',
             'price' => 49.99,
-            'image' => '../images/pages/shop/products/4.png',
+            'image' => 'images/pages/products/4.png',
             'hasFreeShipping' => 'true',
             'rating' => 3
         ]);
@@ -348,7 +348,7 @@ class ProductSeeder extends Seeder
     than ever.',
             'brand' => 'Apple',
             'price' => 999.99,
-            'image' => '../images/pages/shop/products/3.png',
+            'image' => 'images/pages/products/3.png',
             'hasFreeShipping' => 'true',
             'rating' => 4
         ]);
@@ -363,7 +363,7 @@ class ProductSeeder extends Seeder
     scanner would have made it a perfect option to go for around this price range.',
             'brand' => 'Apple',
             'price' => 669.99,
-            'image' => '../images/pages/shop/products/2.png',
+            'image' => 'images/pages/products/2.png',
             'hasFreeShipping' => 'true',
             'rating' => 5
         ]);
@@ -380,7 +380,7 @@ class ProductSeeder extends Seeder
     in a wider range of materials, including aluminium, stainless steel, ceramic and an all-new titanium.',
             'brand' => 'Apple',
             'price' => 339.99,
-            'image' => '../images/pages/shop/products/1.png',
+            'image' => 'images/pages/products/1.png',
             'hasFreeShipping' => 'true',
             'rating' => 4
         ]);
