@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\DashboardController;
@@ -65,6 +66,10 @@ Route::group(['prefix' => 'app'], function () {
     Route::get('user/view/connections', [AppsController::class, 'user_view_connections'])->name('app-user-view-connections');
 });
 /* Route Apps */
+
+Route::prefix('products')->group(function () {
+    Route::get('/', [ProductController::class, 'index']);
+});
 
 /* Route UI */
 Route::group(['prefix' => 'ui'], function () {
