@@ -36,7 +36,6 @@ class ProductController extends Controller
         ];
 
         $breadcrumbs = [
-            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['name' => "Shop"]
         ];
 
         return view('/content/apps/ecommerce/app-ecommerce-shop', [
@@ -82,7 +81,7 @@ class ProductController extends Controller
         ];
 
         $breadcrumbs = [
-            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['link' => "/app/ecommerce/shop", 'name' => "Shop"], ['name' => "Details"]
+            ['link' => "/shop", 'name' => "Shop"], ['name' => "Details"]
         ];
 
         return view('/content/apps/ecommerce/product-details', [

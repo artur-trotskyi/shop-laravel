@@ -50,14 +50,14 @@
                         <div class="btn-group" role="group">
                             <input type="radio" class="btn-check" name="radio_options" id="radio_option1"
                                    autocomplete="off" checked/>
-                            <label class="btn btn-icon btn-outline-primary view-btn grid-view-btn" for="radio_option1"
-                            ><i data-feather="grid" class="font-medium-3"></i
-                                ></label>
+                            <label class="btn btn-icon btn-outline-primary view-btn grid-view-btn" for="radio_option1">
+                                <i data-feather="grid" class="font-medium-3"></i>
+                            </label>
                             <input type="radio" class="btn-check" name="radio_options" id="radio_option2"
                                    autocomplete="off"/>
-                            <label class="btn btn-icon btn-outline-primary view-btn list-view-btn" for="radio_option2"
-                            ><i data-feather="list" class="font-medium-3"></i
-                                ></label>
+                            <label class="btn btn-icon btn-outline-primary view-btn list-view-btn" for="radio_option2">
+                                <i data-feather="list" class="font-medium-3"></i>
+                            </label>
                         </div>
                     </div>
                 </div>

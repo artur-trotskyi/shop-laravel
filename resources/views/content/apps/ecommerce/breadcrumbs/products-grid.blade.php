@@ -2,7 +2,7 @@
     @foreach($products as $product)
         <div class="card ecommerce-card">
             <div class="item-img text-center">
-                <a href="{{ url('app/ecommerce/shop/' . $product->id) }}">
+                <a href="{{ url('shop/product/' . $product->id) }}">
                     <img
                         class="img-fluid card-img-top"
                         src="{{ asset($product->image) }}"
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <h6 class="item-name">
-                    <a class="text-body" href="{{ url('app/ecommerce/shop/' . $product->id) }}">{{ $product->name }}</a>
+                    <a class="text-body" href="{{ url('shop/product/' . $product->id) }}">{{ $product->name }}</a>
                     <span class="card-text item-company">
                         By <a href="#" class="company-name">{{ $product->brand }}</a>
                     </span>
