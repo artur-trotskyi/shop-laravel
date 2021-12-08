@@ -178,23 +178,6 @@ class AppsController extends Controller
         return view('/content/apps/kanban/app-kanban', ['pageConfigs' => $pageConfigs]);
     }
 
-    // Ecommerce Details
-    public function ecommerce_details()
-    {
-        $pageConfigs = [
-            'pageClass' => 'ecommerce-application',
-        ];
-
-        $breadcrumbs = [
-            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['link' => "/app/ecommerce/shop", 'name' => "Shop"], ['name' => "Details"]
-        ];
-
-        return view('/content/apps/ecommerce/app-ecommerce-details', [
-            'pageConfigs' => $pageConfigs,
-            'breadcrumbs' => $breadcrumbs
-        ]);
-    }
-
     // Ecommerce Wish List
     public function ecommerce_wishlist()
     {

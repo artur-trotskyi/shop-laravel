@@ -51,8 +51,10 @@ Route::group(['prefix' => 'app'], function () {
     Route::get('invoice/edit', [AppsController::class, 'invoice_edit'])->name('app-invoice-edit');
     Route::get('invoice/add', [AppsController::class, 'invoice_add'])->name('app-invoice-add');
     Route::get('invoice/print', [AppsController::class, 'invoice_print'])->name('app-invoice-print');
+
     Route::get('ecommerce/shop', [ProductController::class, 'index'])->name('app-ecommerce-shop');
-    Route::get('ecommerce/details', [AppsController::class, 'ecommerce_details'])->name('app-ecommerce-details');
+    Route::get('ecommerce/shop/{productId}', [ProductController::class, 'show'])->name('app-ecommerce-details');
+
     Route::get('ecommerce/wishlist', [AppsController::class, 'ecommerce_wishlist'])->name('app-ecommerce-wishlist');
     Route::get('ecommerce/checkout', [AppsController::class, 'ecommerce_checkout'])->name('app-ecommerce-checkout');
     Route::get('file-manager', [AppsController::class, 'file_manager'])->name('app-file-manager');

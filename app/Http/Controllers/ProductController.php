@@ -70,12 +70,26 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param Product $product
-     * @return Response
+     * @param $productId
+     * @return  View
      */
-    public function show(Product $product)
+    public function show($productId): View
     {
-        //
+        $product = $this->product->findById($productId);
+
+        $pageConfigs = [
+            'pageClass' => 'ecommerce-application',
+        ];
+
+        $breadcrumbs = [
+            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "eCommerce"], ['link' => "/app/ecommerce/shop", 'name' => "Shop"], ['name' => "Details"]
+        ];
+
+        return view('/content/apps/ecommerce/product-details', [
+            'pageConfigs' => $pageConfigs,
+            'breadcrumbs' => $breadcrumbs,
+            'product' => $product
+        ]);
     }
 
     /**
