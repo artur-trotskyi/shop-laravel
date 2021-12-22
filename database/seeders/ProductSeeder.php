@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
                 'After thousands of samples of palm data, we designed this ergonomic mouse. The laptop mouse has a streamlined arc and thumb rest to help reduce the stress caused by prolonged use of the laptop mouse.',
             'brand' => 'VicTsing',
             'price' => 10.99,
-            'image' => 'images/pages/shop/products/27.png',
+            'image' => 'images/pages/products/27.png',
             'hasFreeShipping' => 'true',
             'rating' => 3
         ]);
@@ -190,7 +190,7 @@ class ProductSeeder extends Seeder
             'description' =>
                 'Charge with case=>transmits charging power directly through protective cases. Rubber/plastic/TPU cases under 5 mm thickness . Do not use any magnetic and metal attachments or cards, or it will prevent charging.',
             'brand' => '3M',
-            'price' => 10.83,
+            'price' => 8.83,
             'image' => 'images/pages/products/14.png',
             'hasFreeShipping' => 'true',
             'rating' => 3

@@ -117,7 +117,7 @@
             "slug": "",
             "submenu": [
                 {
-                    "url": "shop",
+                    "url": "shop/products",
                     "name": "Shop",
                     "icon": "circle",
                     "slug": "shop"

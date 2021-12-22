@@ -66,7 +66,7 @@ Route::group(['prefix' => 'app'], function () {
 /* Route Apps */
 
 /* Route Shop */
-Route::get('shop', [ProductController::class, 'index'])->name('shop');
+Route::get('shop/products', [ProductController::class, 'index'])->name('shop');
 Route::get('shop/product/{productId}', [ProductController::class, 'show'])->name('product-details');
 /* Route Shop */
 

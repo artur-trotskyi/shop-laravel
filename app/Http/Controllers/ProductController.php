@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App;
+use App\Http\Filters\ProductFilter;
+use App\Http\Requests\Product\FilterRequest;
 use App\Models\Product;
 use App\Services\ProductService;
 use Illuminate\Contracts\View\View;
@@ -24,12 +27,11 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param FilterRequest $request
      * @return View
      */
-    public function index(): View
+    public function index(FilterRequest $request): View
     {
-        $products = $this->product->all();
-
         $pageConfigs = [
             'contentLayout' => "content-detached-left-sidebar",
             'pageClass' => 'ecommerce-application',
@@ -37,6 +39,11 @@ class ProductController extends Controller
 
         $breadcrumbs = [
         ];
+
+        $data = $request->validated();
+
+        $filter = App::makeWith(ProductFilter::class, ['queryParams' => array_filter($data)]);
+        $products = Product::filter($filter)->paginate(3);
 
         return view('/content/apps/ecommerce/app-ecommerce-shop', [
             'pageConfigs' => $pageConfigs,
