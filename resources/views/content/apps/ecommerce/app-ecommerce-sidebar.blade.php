@@ -13,38 +13,43 @@
                 <ul class="list-unstyled price-range" id="price-range">
                     <li>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input"
+                            <input type="radio" id="priceRange1" name="price-range" class="form-check-input"
+                                   onclick="window.location = '{{ URL::current()."?price=all" }}'"
                                    @if(isset($_GET['price']) && !in_array($_GET['price'], ['less-than-10', 'from-10-to-100',
-                                       'from-100-to-500', 'more-than-500']) || !isset($_GET['price'])) checked @endif />
-                            <a href="{{ URL::current()."?price=all" }}" class="form-check-link">All</a>
+                                       'from-100-to-500', 'more-than-500']) || !isset($_GET['price'])) checked @endif/>
+                            <label class="form-check-label" for="priceRange1">All</label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input"
+                            <input type="radio" id="priceRange2" name="price-range" class="form-check-input"
+                                   onclick="window.location = '{{ URL::current()."?price=less-than-10" }}'"
                                    @if(isset($_GET['price']) && $_GET['price'] === 'less-than-10') checked @endif/>
-                            <a href="{{ URL::current()."?price=less-than-10" }}" class="form-check-link">&lt;= $10</a>
+                            <label class="form-check-label" for="priceRange2">&lt;= $10</label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input"
+                            <input type="radio" id="priceRange3" name="price-range" class="form-check-input"
+                                   onclick="window.location = '{{ URL::current()."?price=from-10-to-100" }}'"
                                    @if(isset($_GET['price']) && $_GET['price'] === 'from-10-to-100') checked @endif/>
-                            <a href="{{ URL::current()."?price=from-10-to-100" }}" class="form-check-link">$10 - $100</a>
+                            <label class="form-check-label" for="priceRange3">$10 - $100</label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input"
+                            <input type="radio" id="priceRange4" name="price-range" class="form-check-input"
+                                   onclick="window.location = '{{ URL::current()."?price=from-100-to-500" }}'"
                                    @if(isset($_GET['price']) && $_GET['price'] === 'from-100-to-500') checked @endif/>
-                            <a href="{{ URL::current()."?price=from-100-to-500" }}" class="form-check-link">$100 - $500</a>
+                            <label class="form-check-label" for="priceRange4">$100 - $500</label>
                         </div>
                     </li>
                     <li>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input"
+                            <input type="radio" id="priceRange5" name="price-range" class="form-check-input"
+                                   onclick="window.location = '{{ URL::current()."?price=more-than-500" }}'"
                                    @if(isset($_GET['price']) && $_GET['price'] === 'more-than-500') checked @endif/>
-                            <a href="{{ URL::current()."?price=more-than-500" }}" class="form-check-link">&gt;= $500</a>
+                            <label class="form-check-label" for="priceRange5">&gt;= $500</label>
                         </div>
                     </li>
                 </ul>
